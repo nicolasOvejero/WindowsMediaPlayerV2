@@ -1,0 +1,255 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" dslVersion="1.0.0.0" Id="25460326-d9d3-4197-87ba-d9c56be9c7d3" name="UMLUseCaseDiagram1" linkedPackageId="d4118579-10a1-4b60-8d93-85736b02f559" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <useCase Id="b2b79d9f-cb28-4a38-a229-73562a024bd7" name="Play" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="ca0fac9b-7de2-4f14-8fc6-e83b98469e94" />
+        <additions>
+          <include Id="64ec33df-b159-4754-8746-6016c00bb261">
+            <useCaseMoniker Id="617c6279-4566-4958-97e0-20035c4b2866" LastKnownName="Lancer le média " />
+            <elementDefinition Id="66b7ad2d-ef38-4ed8-8a2f-cc755ec3d1fb" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="7cf90232-5323-472e-a108-b2879379e611" name="Reculer" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="1c5c1c7f-6240-4c99-bb2b-e4a6b29692b6" />
+        <additions>
+          <include Id="f47d8d35-44ad-4405-956d-8638018f7941">
+            <useCaseMoniker Id="617c6279-4566-4958-97e0-20035c4b2866" LastKnownName="Lancer le média " />
+            <elementDefinition Id="6a1213b1-8bdf-4d46-805f-1bc3422bddbc" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="31dce86d-244d-4a8d-a6b2-982a51ae10ba" name="Avancer" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="d6d1582e-0161-442b-ad0b-ffc4e9193c2d" />
+        <additions>
+          <include Id="b91fe5b2-3336-4215-bb50-94f7168339b4">
+            <useCaseMoniker Id="617c6279-4566-4958-97e0-20035c4b2866" LastKnownName="Lancer le média " />
+            <elementDefinition Id="d4d99193-0481-4064-a5f2-4c6bf1db5023" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="07365363-cc63-4fda-9ee6-08c9e13a499d" name="Modifier le volume" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="9f8494a5-8af1-4ccb-9ade-da8d5b0416f9" />
+        <additions>
+          <include Id="424d2f16-cf76-4410-a650-1322b364d512">
+            <useCaseMoniker Id="617c6279-4566-4958-97e0-20035c4b2866" LastKnownName="Lancer le média " />
+            <elementDefinition Id="70acd876-c8bc-4524-83c8-094473c27098" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="51aac848-975a-4ff5-977e-8a1382cf38cb" name="Mettre en plein ecran" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="da896f54-9b2c-4c2a-8a12-e7ea76f18a5e" />
+        <additions>
+          <include Id="2a0d6aa1-ed0e-41e7-8b03-9b4390637f77">
+            <useCaseMoniker Id="617c6279-4566-4958-97e0-20035c4b2866" LastKnownName="Lancer le média " />
+            <elementDefinition Id="e06c5cef-81af-434d-a480-ecf917c08d34" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="03983656-4244-4e9e-baaf-d9effdf47048" name="Paul" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="11f2177d-0edc-4e43-ab3c-d4ea529565bf" />
+        <targetEnds>
+          <association Id="4bc8bd0f-66b8-43d6-b1e4-ded61bcda74a" isDerived="false" sourceEndRoleName="Actor1" targetEndRoleName="Charger playlist" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="caaef0c6-c295-4324-861f-e384bac473e2" LastKnownName="Charger playlist" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="7d419a52-02bd-41b9-8c3a-c5aa7d28b017" name="Actor1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="64405b68-2e99-48f4-b7e6-4dc4e26874a0" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="be470a71-3bb4-467e-8ad0-cd055a2a3bfc" name="Charger playlist" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="a7bce6ff-bf66-49a6-ab4e-dfc2766c99dc" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="d779ea5a-acb9-48b6-a548-2b0521ddbfd9" />
+          </association>
+          <association Id="a67e1c2e-d8f7-4d1b-bb9b-0c0bfbae0d2a" isDerived="false" sourceEndRoleName="Actor1" targetEndRoleName="Recherche de fichier" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="3d4ea63f-d87d-47af-a7ac-aef666cc9e59" LastKnownName="Recherche de fichier" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="eb47a9ae-7a1b-4229-9cad-133f9e19429e" name="Actor1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="2bfcdc18-23b3-4328-ba76-303de31d7949" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="018767f1-62db-4bd1-8b63-cbab2565f7b8" name="Recherche de fichier" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="3b59f770-670a-4a2d-bad3-dc2ef62c1c68" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="115a84ae-e830-4546-bf69-ae94150d850c" />
+          </association>
+          <association Id="e49deb48-f45a-4ebd-bf21-f9b40a5fddf2" isDerived="false" sourceEndRoleName="Actor1" targetEndRoleName="Lancer le média " isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="617c6279-4566-4958-97e0-20035c4b2866" LastKnownName="Lancer le média " />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="365c3a41-3cbc-42b7-874c-f687a620f9cf" name="Actor1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="3f1f5d8f-61d6-4d9f-80d4-bb542f70a3d0" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="e3073a4b-06b7-4bf9-aafa-60a5129db880" name="Lancer le média " isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="8b06fe56-8b33-4790-af3f-5aacc7467332" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="0bd40ed3-d132-449e-b3d0-355629651f5a" />
+          </association>
+          <association Id="bf2c2665-eb3d-475c-9340-e5ea7597c80d" isDerived="false" sourceEndRoleName="Actor1" targetEndRoleName="Ouvre un fichier" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="2166e2bd-3887-44c4-af86-2f0b583982d2" LastKnownName="Ouvreture fichiers" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="6020fc81-7731-499e-a5af-bd29764ec7d2" name="Actor1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="094a28c5-ede1-49dc-a84f-5988cf0e0b94" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="c243d217-6f13-429d-8ced-dc9499b1f62b" name="Ouvre un fichier" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="e5b6f2d8-d2c5-48a3-bd48-fbaa3b341ed5" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="e64f44ee-da37-47e4-9221-66947d0ee2f2" />
+          </association>
+          <association Id="e860170f-4841-4593-ba6b-505446536055" isDerived="false" sourceEndRoleName="Paul" targetEndRoleName="Export XML" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="7f535ac5-a196-4112-8674-833392356625" LastKnownName="Export XML" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="801d54f8-2f29-4a3d-84d6-bb1cf2c82083" name="Paul" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="c6f3d1ed-89be-40bc-ac9c-778216552295" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="44206e99-52b4-489e-8004-ac77ca0dcf43" name="Export XML" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="1780f6e7-37c3-4724-93b8-87fb32ed4852" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="7db3932a-cfa9-4a9f-8b1f-02cc965908d6" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="617c6279-4566-4958-97e0-20035c4b2866" name="Lancer le média " isAbstract="false" isLeaf="false">
+        <elementDefinition Id="8f2f9598-e773-438e-aad9-9c7e13b8d64a" />
+        <additions>
+          <include Id="49cd5f8d-114c-4144-82fc-b1b6170ea276">
+            <useCaseMoniker Id="2166e2bd-3887-44c4-af86-2f0b583982d2" LastKnownName="Ouvreture fichiers" />
+            <elementDefinition Id="a50632a4-bb13-4ec9-b9f4-6f08e230c206" />
+          </include>
+          <include Id="56846887-75ae-46ee-a1a8-4cea09ce74d4">
+            <useCaseMoniker Id="caaef0c6-c295-4324-861f-e384bac473e2" LastKnownName="Charger playlist" />
+            <elementDefinition Id="624e43d4-bb18-4d3f-ab6f-4b7abc5bd71e" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="ecae100e-adfa-4776-a70e-4a8c0e6acc37" name="Creer playlist" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="4a856a33-9420-4838-9869-060c008c5ada" />
+        <additions>
+          <include Id="3f651c2e-a995-4c70-ad33-72025a82aef2">
+            <useCaseMoniker Id="7f535ac5-a196-4112-8674-833392356625" LastKnownName="Export XML" />
+            <elementDefinition Id="6b579a39-efff-4bfb-b733-61feb3696703" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="caaef0c6-c295-4324-861f-e384bac473e2" name="Charger playlist" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="c5803c39-b638-4a7b-9008-1ad0374c0ca1" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="3d4ea63f-d87d-47af-a7ac-aef666cc9e59" name="Recherche de fichier" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="7e0d70fe-445c-40c8-997c-9a9ad3ebd373" />
+        <additions>
+          <include Id="34f70804-a819-49f8-a259-63c78afeb9fa">
+            <useCaseMoniker Id="ecae100e-adfa-4776-a70e-4a8c0e6acc37" LastKnownName="Creer playlist" />
+            <elementDefinition Id="aa857407-345b-4997-9aff-b03ce562fe87" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="a68b4268-4b1e-496c-b86c-33de89aba39d" name="Pause" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="a22b1940-3308-4f96-b94b-3abbdf5a17de" />
+        <additions>
+          <include Id="538710a3-dece-44b5-a315-e0a312769db9">
+            <useCaseMoniker Id="617c6279-4566-4958-97e0-20035c4b2866" LastKnownName="Lancer le média " />
+            <elementDefinition Id="7eb69e76-87f8-40e9-a6d1-83cd027fc9fe" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="522707e9-e378-4c89-994e-ce541efbc0b1" name="Modifier vitesse de lecture" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="f9aaa401-d5b1-4f1e-9294-7805c8e0f49d" />
+        <additions>
+          <include Id="279c5d05-1236-4dd0-a86c-ae8725de771e">
+            <useCaseMoniker Id="617c6279-4566-4958-97e0-20035c4b2866" LastKnownName="Lancer le média " />
+            <elementDefinition Id="ab956b38-4cba-4713-8c9b-63d4f6144207" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="2166e2bd-3887-44c4-af86-2f0b583982d2" name="Ouvreture fichiers" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="459af436-6b4e-408a-bfaf-1fdbf3d0eed7" />
+        <additions>
+          <include Id="cabc7083-57a9-4df8-8271-4834d307d6f5">
+            <useCaseMoniker Id="ecae100e-adfa-4776-a70e-4a8c0e6acc37" LastKnownName="Creer playlist" />
+            <elementDefinition Id="e5dc6d81-ccc0-4053-85d3-ec5dca21a7cc" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="7f535ac5-a196-4112-8674-833392356625" name="Export XML" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="24497e0d-ef3c-495b-a3bb-85c2a66d6b17" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="650603ba-56b4-479f-891c-72fa205f14f7" name="Stop" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="8a1c3132-43ac-45cb-81d4-7d41fde056bf" />
+        <suppliersInternal>
+          <dependency Id="a68eeb2b-3afd-4890-829c-efeefed91108">
+            <useCaseMoniker Id="617c6279-4566-4958-97e0-20035c4b2866" LastKnownName="Lancer le média " />
+            <elementDefinition Id="7945965f-2181-4a68-a90d-e9992bf0f132" />
+          </dependency>
+        </suppliersInternal>
+      </useCase>
+    </useCaseModelRootHasTypes>
+  </packagedElements>
+  <package Id="d4118579-10a1-4b60-8d93-85736b02f559" name="ModelingProject">
+    <elementDefinition Id="24097943-a688-426e-9f4f-ce325dcb611b" />
+    <profileInstances>
+      <packageHasProfileInstances Id="684d86f8-34aa-4366-a7a9-836dec96cdfb">
+        <profileInstance Id="2c0680cc-a24d-4923-9124-14b59d4b14a4" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="2b8702e9-c086-48ab-bb69-a891004d2618">
+        <profileInstance Id="091bfabd-5bfd-4e10-80c7-f6dfc22d443e" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</useCaseModelRoot>

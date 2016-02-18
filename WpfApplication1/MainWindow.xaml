@@ -1,0 +1,166 @@
+﻿<Window x:Class="WpfApplication1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApplication1"
+        mc:Ignorable="d" Icon="images/logo_kebab.png"
+        Title="MyWindowsMediaPlayer" Height="720" Width="1200" MinWidth="1200" MinHeight="720" AllowDrop="True" WindowStyle="None" 
+        AllowsTransparency="True" Background="Transparent" WindowStartupLocation="CenterScreen" KeyUp="media_keyUp">
+    
+    <Border x:Name="Border"  BorderBrush="Black">
+        <DockPanel LastChildFill="True" Margin="0,0,0,0">
+
+            <!-- Propriété pour la bar du haut -->
+            <Border x:Name="style" DockPanel.Dock="Top" Grid.Row="0" HorizontalAlignment="Stretch" Height="25"
+                    Background="#FF828790" MouseDown="Border_MouseDown" >
+                <Grid Grid.Column="0" Grid.Row="0" Margin="0,0,0,0">
+                    <Button x:Name="X" Click="myclose" Content="X" Margin="1161,0,10,0" Background="#FFAA0C0C" FontWeight="Bold" RenderTransformOrigin="0.321,0.3"/>
+                    <TextBlock x:Name="WindowsTitle" Text="My windows Media Player" HorizontalAlignment="Left" Margin="10,4,0,0" VerticalAlignment="Top" Width="439" FontWeight="Bold"/>
+                </Grid>
+            </Border>
+            <Grid RenderTransformOrigin="0.5,0.5"  AllowDrop="True" Background="Black">
+                <!-- Media player -->
+                <MediaElement x:Name="mediaElement1" RenderTransformOrigin="0.5,0.503" MouseLeftButtonUp="MediaPlayer_MouseLeftUp" AllowDrop="False" Margin="0,30,0,67" 
+                              MouseMove="mediaElement1_MouseMove"/>
+
+                <Canvas x:Name="PanelBot" HorizontalAlignment="Center" Height="62" Margin="-2,0,2,0" VerticalAlignment="Bottom" Width="1200" Background="#00000000">
+                    <!-- Bar pour le temps et timming gauche/droite -->
+                    <Slider x:Name="seekBar" Thumb.DragStarted="seekBar_DragStarted" Thumb.DragCompleted="seekBar_DragCompleted" VerticalAlignment="Bottom" ScrollViewer.HorizontalScrollBarVisibility="Auto" ScrollViewer.VerticalScrollBarVisibility="Auto" Foreground="{x:Null}" Background="{x:Null}" Grid.ColumnSpan="6" Canvas.Left="85" Width="1025" BorderBrush="Red" />
+                    <Label x:Name="timemax" Content="00:00:00" HorizontalAlignment="Right" VerticalAlignment="Bottom" Width="54" Foreground="#FFFBFBFB" Canvas.Left="1104" Height="24" Canvas.Top="-6"/>
+                    <Label x:Name="timeact" Content="00:00:00" HorizontalAlignment="Left" VerticalAlignment="Bottom" Width="55" Foreground="#FFFBFBFB" Canvas.Left="28" Canvas.Top="-4" Height="24"/>
+
+                    <!-- Bouton gestion de la lecture -->
+                    <Button x:Name="Rewind" Content="&lt;&lt;" Click="rewind" HorizontalAlignment="Center" VerticalAlignment="Bottom" Width="74" Canvas.Left="491" Canvas.Top="18" Height="36">
+                        <Button.Template>
+                            <ControlTemplate>
+                                <Image x:Name="buttonStopImage" Source="images/speeddown.png"/>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+                    <Button x:Name="prev" Click="prev_click" HorizontalAlignment="Center" VerticalAlignment="Bottom" Width="74" Canvas.Left="418" Canvas.Top="18" Height="36">
+                        <Button.Template>
+                            <ControlTemplate>
+                                <Image x:Name="buttonStopImage" Source="images/backward.png"/>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+                    <Button x:Name="buttonPlay" Click="button1_Click" MinHeight="35" MaxHeight="36" HorizontalAlignment="Center" VerticalAlignment="Bottom" Content="Play" ScrollViewer.VerticalScrollBarVisibility="Disabled" Grid.Column="3" Width="36" Height="36" Canvas.Left="580" Canvas.Top="18" Foreground="#FF2C2C2C" BorderBrush="Red" Background="Black">
+                        <Button.Template>
+                            <ControlTemplate>
+                                <Image x:Name="buttonPlayPauseImage" Source="images/Play.png"/>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+                    <Button x:Name="buttonStop" Click="button3_Click" MinHeight="35" MaxHeight="36" HorizontalAlignment="Center" VerticalAlignment="Bottom" Content="Play" ScrollViewer.HorizontalScrollBarVisibility="Auto" ScrollViewer.VerticalScrollBarVisibility="Auto" Grid.Column="3" Width="36" Height="36" Canvas.Left="616" Canvas.Top="18">
+                        <Button.Template>
+                            <ControlTemplate>
+                                <Image x:Name="buttonStopImage" Source="images/Stop.png"/>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+                    <Button x:Name="Forward" Content=">>" Click="forward" HorizontalAlignment="Center" VerticalAlignment="Bottom" Width="74" Canvas.Left="666" Canvas.Top="18" Height="36">
+                        <Button.Template>
+                            <ControlTemplate>
+                                <Image x:Name="buttonStopImage" Source="images/speedup.png"/>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+                    <Button x:Name="next" Click="next_click" HorizontalAlignment="Center" VerticalAlignment="Bottom" Width="74" Canvas.Left="739" Canvas.Top="18" Height="36">
+                        <Button.Template>
+                            <ControlTemplate>
+                                <Image x:Name="buttonStopImage" Source="images/forward.png"/>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+
+                    <!-- Slider pour le son -->
+                    <StackPanel Orientation="Horizontal" Height="30" VerticalAlignment="Bottom" Canvas.Left="10" Canvas.Top="18" HorizontalAlignment="Left">
+                        <TextBlock Text="Volume" VerticalAlignment="Center" RenderTransformOrigin="0.507,0.583" Foreground="#FFFBFBFB" Margin="0,7"/>
+                        <Slider x:Name="volumeSlider" ValueChanged="ChangeMediaVolume"  Margin="2,7,2,2" Maximum="100" Minimum="0" Width="102" Value="50"/>
+                        <TextBlock x:Name="Volume" Text="50" VerticalAlignment="Center" Foreground="#FFFBFBFB" Margin="0,7" Width="27" />
+                    </StackPanel>
+                </Canvas>
+
+                <!-- Menu en haut de la fenêtre -->
+                <StackPanel x:Name="menu" VerticalAlignment="Top" Height="30">
+                    <Menu Height="29" HorizontalAlignment="Left" Width="1200" Background="#FF828790">
+                        <!-- Gestion de la des fichiers -->
+                        <MenuItem Background="#00F0F0F0" BorderBrush="#00999999" Click="GoHomeClick">
+                            <MenuItem.Header>
+                                <StackPanel>
+                                    <Image Source="/images/home.png" Height="22" Width="23" ></Image>
+                                </StackPanel>
+                            </MenuItem.Header>
+                        </MenuItem>
+                        <MenuItem Header="_File" Width="34" Height="29">
+                            <MenuItem x:Name="OpenFiles" Header="_Open files" Margin="0,0,-2,0" Click="OpenFilesClick"/>
+                        </MenuItem>
+                        <!-- Gestion de la playlist -->
+                        <MenuItem Header="_Playlist" Width="61" RenderTransformOrigin="0.5,0.5">
+                            <MenuItem x:Name="ExportPL" Header="_Export Playlist" Margin="0,0,-2,0" Click="ExportPlayList"/>
+                            <MenuItem x:Name="ImportPL" Header="_Import Playlist" Margin="0,0,-2,0" Click="ImportPlayList"/>
+                        </MenuItem>
+                        <!-- Gestion des Media -->
+                        <MenuItem Header="_Gestion Media" Width="94">
+                            <MenuItem x:Name="MusicDirectory" Header="_Open music directory" Margin="0,0,-2,0" Click="MusicDirectory_Click"/>
+                            <MenuItem x:Name="ImageDirectory" Header="_Open image directory" Margin="0,0,-2,0" Click="ImageDirectory_Click"/>
+                            <MenuItem x:Name="VideoDirectory" Header="_Open video directory" Margin="0,0,-2,0" Click="VideoDirectory_Click"/>
+                        </MenuItem>
+                    </Menu>
+                </StackPanel>
+
+                <!-- Affichage des fichiers et des documents -->
+                <TreeView x:Name="foldersMusicItem" HorizontalAlignment="Left" Height="666" Margin="0,29,0,0" VerticalAlignment="Top" Width="221" Visibility="Hidden" Background="#FF202020" Foreground="#FFFBFBFB"/>
+                <ListView x:Name="FileListingSong" VerticalAlignment="Stretch" Visibility="Hidden" Background="#FF2C2C2C" HorizontalAlignment="Right" Width="980" Foreground="White" Margin="0,29,0,0" AllowDrop="True" KeyDown="FileListingMusics_keyDown" GridViewColumnHeader.Click="MusicHeaderClick">
+                    <ListView.View>
+                        <GridView>
+                            <GridViewColumn Header="Title" Width="400" DisplayMemberBinding="{Binding Path=Title}" />
+                            <GridViewColumn Header="Duration" Width="80" DisplayMemberBinding="{Binding Path=RealLength}"/>
+                            <GridViewColumn Header="Author" Width="180" DisplayMemberBinding="{Binding Path=Author}"/>
+                            <GridViewColumn Header="Album" Width="170" DisplayMemberBinding="{Binding Path=Album}"/>
+                            <GridViewColumn Header="Created time" Width="120" DisplayMemberBinding="{Binding Path=Add}"/>
+                        </GridView>
+                    </ListView.View>
+                </ListView>
+
+                <TreeView x:Name="foldersImageItem" HorizontalAlignment="Left" Height="666" Margin="0,29,0,0" VerticalAlignment="Top" Width="221" Visibility="Hidden" Background="#FF202020" Foreground="#FFFBFBFB" />
+                <ListView x:Name="FileListingImage" VerticalAlignment="Stretch" Visibility="Hidden" Background="#FF2C2C2C" HorizontalAlignment="Right" Width="979" Foreground="White" Margin="0,29,0,0" AllowDrop="True" KeyDown="FileListingImages_keyDown" GridViewColumnHeader.Click="ImageHeaderClick">
+                    <ListView.View>
+                        <GridView>
+                            <GridViewColumn Header="Title" Width="300" DisplayMemberBinding="{Binding Path=Title}" />
+                            <GridViewColumn Header="Size (octets)" Width="200" DisplayMemberBinding="{Binding Path=Size}"/>
+                            <GridViewColumn Header="Created time" Width="150" DisplayMemberBinding="{Binding Path=Add}"/>
+                        </GridView>
+                    </ListView.View>
+                </ListView>
+
+                <TreeView x:Name="foldersVideoItem" HorizontalAlignment="Left" Height="666" Margin="0,29,0,0" VerticalAlignment="Top" Width="221" Visibility="Hidden" Background="#FF202020" Foreground="#FFFBFBFB"/>
+                <ListView x:Name="FileListingVideo" VerticalAlignment="Stretch" Visibility="Hidden" Background="#FF2C2C2C" HorizontalAlignment="Right" Width="979" Foreground="White" Margin="0,29,0,0" AllowDrop="True" KeyDown="FileListingVideos_keyDown">
+                    <ListView.View>
+                        <GridView>
+                            <GridViewColumn Header="Title" Width="300" DisplayMemberBinding="{Binding Path=Title}" />
+                            <GridViewColumn Header="Duration" Width="100" DisplayMemberBinding="{Binding Path=realLength}"/>
+                            <GridViewColumn Header="Created time" Width="150" DisplayMemberBinding="{Binding Path=Add}"/>
+                        </GridView>
+                    </ListView.View>
+                </ListView>
+
+                <!-- PlayList slider -->
+                <TextBox x:Name="tbSearch" Margin="979,3,2,668" TextChanged="SearchPlayList" Background="#FFC2C2C2" Visibility="Hidden"/>
+                <Image x:Name="imsh" Source="images/search.png" Margin="945,3,215,668" Visibility="Hidden"></Image>
+                <Expander x:Name="pl" IsExpanded="False" ExpandDirection="Right" HorizontalAlignment="Right" Background="#00000000" Height="666" VerticalAlignment="Bottom" Expanded="pl_expanded" Collapsed="pl_collapsed">
+                    <StackPanel Margin="0, 0, 0, 0" Width="258">
+                        <ListBox x:Name="playList" VerticalContentAlignment="Stretch" Height="664" Foreground="#FFFB00E4" Margin="0,-1" OpacityMask="Black" Background="#FF2C2C2C" AllowDrop="True" Drop="playList_DragDrop" KeyDown="playList_keyDown">
+                            <ListBox.ItemContainerStyle>
+                                <Style TargetType="{x:Type ListBoxItem}">
+                                    <EventSetter Event="Control.MouseDoubleClick" Handler="DoubleClickHandler"/>
+                                </Style>
+                            </ListBox.ItemContainerStyle>
+                        </ListBox>
+                    </StackPanel>
+                </Expander>
+            </Grid>
+        </DockPanel>
+    </Border>
+</Window>

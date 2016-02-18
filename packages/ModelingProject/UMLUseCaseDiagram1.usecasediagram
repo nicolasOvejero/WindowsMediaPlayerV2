@@ -1,0 +1,258 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="25460326-d9d3-4197-87ba-d9c56be9c7d3" name="UMLUseCaseDiagram1" linkedPackageId="d4118579-10a1-4b60-8d93-85736b02f559" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <profileInstances>
+    <packageHasProfileInstances Id="684d86f8-34aa-4366-a7a9-836dec96cdfb">
+      <profileInstance Id="2c0680cc-a24d-4923-9124-14b59d4b14a4" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="2b8702e9-c086-48ab-bb69-a891004d2618">
+      <profileInstance Id="091bfabd-5bfd-4e10-80c7-f6dfc22d443e" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <actor Id="ff32e944-d4bb-4cb9-b11b-d7cbee31440d" name="Actor" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="a60e7353-1c2a-450d-9d1e-6a45008ae81c" />
+        <targetEnds>
+          <association Id="22573ae9-429f-45c0-bae3-bb5dcb15f750" isDerived="false" sourceEndRoleName="Actor" targetEndRoleName="Lancement standard" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="c687a776-0f3f-4598-99d2-a1d073cea456" LastKnownName="Lancement standard" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="d8f44a02-3c00-44b7-87a9-317cc1499cb6" name="Actor" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="1de8f9e0-3a54-4075-b5bc-69109b916021" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="08b76e14-78b5-4b81-b729-809710339303" name="Lancement standard" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="c98dcfb0-697e-4f11-bb6b-1e68f6ca83f2" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="8a25ad67-fa11-4215-8917-49afb3d38dd6" />
+          </association>
+          <association Id="5fe23a80-ccc8-4de0-8894-24275eac025b" isDerived="false" sourceEndRoleName="Actor" targetEndRoleName="Lancement via click droit" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="b79322af-4209-4f26-8720-ecde2d2c1c0e" LastKnownName="Lancement via click droit" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="ea200593-0f5a-4266-b21f-95fed45f3b7d" name="Actor" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="28ce9455-4f9e-4826-894f-06891cea5bc0" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="fe912500-1141-4259-8223-0f33f37e8ebc" name="Lancement via click droit" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="76e0e655-fb12-4ca5-bb9e-e03dc3259f77" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="1d1cbd09-7c36-4507-8d70-2017c72dc103" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="c687a776-0f3f-4598-99d2-a1d073cea456" name="Lancement standard" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="3bc19a20-26cc-4d5f-a36c-dfea0aa5d4aa" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="3fd491a0-13e1-49ce-90e6-0284a2c4a9f8" name="Menu musique" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="97c2daf7-ac48-4107-a5af-bb00fb5be9a2" />
+        <suppliersInternal>
+          <dependency Id="1b4d83ad-265a-4052-8276-37dc5c8baa59">
+            <useCaseMoniker Id="c687a776-0f3f-4598-99d2-a1d073cea456" LastKnownName="Lancement standard" />
+            <elementDefinition Id="bea68ab5-272b-44a7-948e-fcacffd5aa4e" />
+          </dependency>
+        </suppliersInternal>
+        <targetEnds>
+          <association Id="59f4169d-afc0-499c-8ab4-446bda7e2ef8" isDerived="false" sourceEndRoleName="Menu musique" targetEndRoleName="Lecture du fichier" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="b6b329d6-4861-408f-9174-c31af971f99a" LastKnownName="Lecture du fichier" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="47bfa95f-83a0-44b4-bb36-e44fb86b0155" name="Menu musique" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="dbbf7639-3755-4fd7-aa6d-0933836a64fd" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="38e9e4a9-e831-4bba-b6e4-b2696b1d142a" name="Lecture du fichier" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="0e5855a7-8f23-4daf-9547-63a797f2e1ae" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="ec597a85-5757-40cd-8180-49c7e8a1ec55" />
+          </association>
+        </targetEnds>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="1a8fa4d6-1d81-4723-823d-d1481584106f" name="Menu image" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="f8751525-9c5c-4281-9c40-6e9e6b2ec4b4" />
+        <suppliersInternal>
+          <dependency Id="03717b44-df42-4ed9-9dac-9abf3c194044">
+            <useCaseMoniker Id="c687a776-0f3f-4598-99d2-a1d073cea456" LastKnownName="Lancement standard" />
+            <elementDefinition Id="d90cf4ef-83b7-4975-9b26-f695a6dbd721" />
+          </dependency>
+        </suppliersInternal>
+        <targetEnds>
+          <association Id="0cbde9ef-04e6-422c-9594-402e3f4756e4" isDerived="false" sourceEndRoleName="Menu image" targetEndRoleName="Lecture du fichier" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="b6b329d6-4861-408f-9174-c31af971f99a" LastKnownName="Lecture du fichier" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="cd10faaa-dedc-4e7c-b783-d0d0f8e90b43" name="Menu image" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="b73cc8ae-786b-40d4-ae77-246439f4b1c0" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="08d396d4-fbaa-476b-98d5-551194237acf" name="Lecture du fichier" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="e6b7fcce-5a76-4ab6-8282-be5f2342258f" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="ff64416d-f48b-4f28-a540-9ff7344c69df" />
+          </association>
+        </targetEnds>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="b345bfdc-8cbc-421a-b63b-d056216da887" name="Menu vidéo" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="1d648107-f396-48b2-8b4b-812762f3a382" />
+        <suppliersInternal>
+          <dependency Id="e5ef3263-c334-40ea-985d-386fead5b640">
+            <useCaseMoniker Id="c687a776-0f3f-4598-99d2-a1d073cea456" LastKnownName="Lancement standard" />
+            <elementDefinition Id="3b4d79bd-ae4c-4057-92b2-7e18fc2883db" />
+          </dependency>
+        </suppliersInternal>
+        <targetEnds>
+          <association Id="39351668-d766-4593-be33-75e066126e34" isDerived="false" sourceEndRoleName="Menu vidéo" targetEndRoleName="Lecture du fichier" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="b6b329d6-4861-408f-9174-c31af971f99a" LastKnownName="Lecture du fichier" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="5ce310a8-e119-4388-b1db-4a96872c731c" name="Menu vidéo" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="e1d6b278-c074-434e-95a8-af30297e1d44" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="343a19a0-b05e-4543-84ce-63c61176c204" name="Lecture du fichier" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="6c8bc420-bfdf-45b9-9a23-7ec70adfa3f7" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="582e86da-0656-45f9-a2b5-c5e708e76f58" />
+          </association>
+        </targetEnds>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="b79322af-4209-4f26-8720-ecde2d2c1c0e" name="Lancement via click droit" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="0e0db145-81eb-4a48-a071-d51536ced83d" />
+        <targetEnds>
+          <association Id="7657c130-f340-4b7e-8444-2276f2ffd52b" isDerived="false" sourceEndRoleName="Lancement via click droit" targetEndRoleName="Lecture du fichier" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="b6b329d6-4861-408f-9174-c31af971f99a" LastKnownName="Lecture du fichier" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="499f5c36-fdd5-4fd2-b5fb-cd9a7fc53be0" name="Lancement via click droit" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="dd2d6f46-cf48-4dc3-9d50-65a68adc727f" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="14efc6b5-fa44-459c-b1c3-60d3a496dfeb" name="Lecture du fichier" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="b2ce9d90-65d2-4c7e-b660-94fe15eea55d" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="cbe00bc7-204e-49c7-831d-624b51c1a36b" />
+          </association>
+        </targetEnds>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="b6b329d6-4861-408f-9174-c31af971f99a" name="Lecture du fichier" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="ed98d911-645f-49e4-9283-b62f09c2905b" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="af70c2e1-8925-4d0f-8a25-7c62e0829f9f" name="Tri" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="2ea2ba13-3209-4c93-b889-5e97b333569e" />
+        <additions>
+          <include Id="b5bacdfc-e2fe-4e56-b3c4-1c7d3ef14bf9">
+            <useCaseMoniker Id="3fd491a0-13e1-49ce-90e6-0284a2c4a9f8" LastKnownName="Menu musique" />
+            <elementDefinition Id="d677142a-eeca-43c0-90d3-22649e4c6e04" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="b2b79d9f-cb28-4a38-a229-73562a024bd7" name="Play" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="ca0fac9b-7de2-4f14-8fc6-e83b98469e94" />
+        <additions>
+          <include Id="4cf9db3d-2f95-4e61-9dcc-9668dadf6d30">
+            <useCaseMoniker Id="b6b329d6-4861-408f-9174-c31af971f99a" LastKnownName="Lecture du fichier" />
+            <elementDefinition Id="acf2af84-8bdf-4247-bccd-8cb9ccd56ec3" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="85b0d5c7-0497-4157-8615-08287f6150ab" name="Pause" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="1a48771d-fd3c-4128-b7bd-a8e9ee99b750" />
+        <additions>
+          <include Id="d70c0d88-2c38-43f6-9ca2-83e2f56385b1">
+            <useCaseMoniker Id="b6b329d6-4861-408f-9174-c31af971f99a" LastKnownName="Lecture du fichier" />
+            <elementDefinition Id="05c771f4-7c45-4532-b6af-7e49b5778850" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="7cf90232-5323-472e-a108-b2879379e611" name="Reculer" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="1c5c1c7f-6240-4c99-bb2b-e4a6b29692b6" />
+        <additions>
+          <include Id="3239e710-6bc5-41f1-a46e-12ee9dd1c792">
+            <useCaseMoniker Id="b6b329d6-4861-408f-9174-c31af971f99a" LastKnownName="Lecture du fichier" />
+            <elementDefinition Id="8aad309f-bc9b-4689-affe-b6f6ba46bbb5" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="31dce86d-244d-4a8d-a6b2-982a51ae10ba" name="Avancer" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="d6d1582e-0161-442b-ad0b-ffc4e9193c2d" />
+        <additions>
+          <include Id="d068d7c8-9c51-4057-8366-0416f9eb3abc">
+            <useCaseMoniker Id="b6b329d6-4861-408f-9174-c31af971f99a" LastKnownName="Lecture du fichier" />
+            <elementDefinition Id="f4c654b4-e283-4fc8-8961-222a1aec16e5" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="07365363-cc63-4fda-9ee6-08c9e13a499d" name="Son" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="9f8494a5-8af1-4ccb-9ade-da8d5b0416f9" />
+        <additions>
+          <include Id="9c918f2c-a2fd-4ca0-800e-cf503c153354">
+            <useCaseMoniker Id="b6b329d6-4861-408f-9174-c31af971f99a" LastKnownName="Lecture du fichier" />
+            <elementDefinition Id="08cca5b4-50a6-4d1a-8097-d03b064a69b1" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="a2431510-0f3e-4bf1-a1f8-af89f0cedd11" name="Repétition" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="f6df11c3-44d0-455b-87df-bed0765dd310" />
+        <additions>
+          <include Id="0280cd73-f06d-4aa2-acff-d96290ffd1ca">
+            <useCaseMoniker Id="b6b329d6-4861-408f-9174-c31af971f99a" LastKnownName="Lecture du fichier" />
+            <elementDefinition Id="d0a95b12-9502-47f3-bdc9-499eab9baa0f" />
+          </include>
+        </additions>
+      </useCase>
+    </useCaseModelRootHasTypes>
+  </packagedElements>
+  <package Id="d4118579-10a1-4b60-8d93-85736b02f559" name="ModelingProject">
+    <elementDefinition Id="24097943-a688-426e-9f4f-ce325dcb611b" />
+  </package>
+</useCaseModelRoot>

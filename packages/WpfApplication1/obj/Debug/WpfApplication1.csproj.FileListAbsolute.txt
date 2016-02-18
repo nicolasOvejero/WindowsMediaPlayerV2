@@ -1,0 +1,17 @@
+X:\Visual Studio\Projects\WindowsMedia\MyWindowsMediaPlayer\WpfApplication1\WpfApplication1\bin\Debug\WpfApplication1.exe.config
+X:\Visual Studio\Projects\WindowsMedia\MyWindowsMediaPlayer\WpfApplication1\WpfApplication1\obj\Debug\MainWindow.g.cs
+X:\Visual Studio\Projects\WindowsMedia\MyWindowsMediaPlayer\WpfApplication1\WpfApplication1\obj\Debug\App.g.cs
+X:\Visual Studio\Projects\WindowsMedia\MyWindowsMediaPlayer\WpfApplication1\WpfApplication1\obj\Debug\WpfApplication1_MarkupCompile.cache
+X:\Visual Studio\Projects\WindowsMedia\MyWindowsMediaPlayer\WpfApplication1\WpfApplication1\obj\Debug\WpfApplication1_MarkupCompile.lref
+X:\Visual Studio\Projects\WindowsMedia\MyWindowsMediaPlayer\WpfApplication1\WpfApplication1\bin\Debug\WpfApplication1.exe
+X:\Visual Studio\Projects\WindowsMedia\MyWindowsMediaPlayer\WpfApplication1\WpfApplication1\bin\Debug\WpfApplication1.pdb
+X:\Visual Studio\Projects\WindowsMedia\MyWindowsMediaPlayer\WpfApplication1\WpfApplication1\obj\Debug\MainWindow.baml
+X:\Visual Studio\Projects\WindowsMedia\MyWindowsMediaPlayer\WpfApplication1\WpfApplication1\obj\Debug\WpfApplication1.g.resources
+X:\Visual Studio\Projects\WindowsMedia\MyWindowsMediaPlayer\WpfApplication1\WpfApplication1\obj\Debug\WpfApplication1.Properties.Resources.resources
+X:\Visual Studio\Projects\WindowsMedia\MyWindowsMediaPlayer\WpfApplication1\WpfApplication1\obj\Debug\WpfApplication1.csproj.GenerateResource.Cache
+X:\Visual Studio\Projects\WindowsMedia\MyWindowsMediaPlayer\WpfApplication1\WpfApplication1\obj\Debug\WpfApplication1.exe
+X:\Visual Studio\Projects\WindowsMedia\MyWindowsMediaPlayer\WpfApplication1\WpfApplication1\obj\Debug\WpfApplication1.pdb
+X:\Visual Studio\Projects\WindowsMedia\MyWindowsMediaPlayer\WpfApplication1\WpfApplication1\obj\Debug\WpfApplication1.csprojResolveAssemblyReference.cache
+X:\Visual Studio\Projects\WindowsMedia\MyWindowsMediaPlayer\WpfApplication1\WpfApplication1\bin\Debug\policy.2.0.taglib-sharp.config
+X:\Visual Studio\Projects\WindowsMedia\MyWindowsMediaPlayer\WpfApplication1\WpfApplication1\obj\Debug\View\PopUp.g.cs
+X:\Visual Studio\Projects\WindowsMedia\MyWindowsMediaPlayer\WpfApplication1\WpfApplication1\obj\Debug\View\PopUp.baml
